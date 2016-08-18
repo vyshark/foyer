@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<script src="jquery-3.1.0.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>New Web Project</title>
+        <link rel="stylesheet" href="layout.css"/>
+    </head>
+    <body>
+        <div id="page">
+        	
+        		<div id="header" class="nosel">
+        		
+        		<div id="fixed"> </div>
+        		<div id="img"></div>
+        		
+        		
+        		<div id="h11"><h1>FOY<span>E</span>R</h1></div>
+        		
+        			<div id="upperbutton" class="options">
+        				<ul>
+        					<li>155203</li>	
+        					<li>logout</li>
+        				</ul>
+        			</div>
+        		
+        		</div>
+        
+        		
+        		<div id="content">
+        			
+        			<div class="boxes"><img src="2016-08-12-185219_1366x768_scrot.png" height="200" width="200" alt="anna"/></div>
+           			<div class="boxes"><img src="2016-08-12-185219_1366x768_scrot.png" height="200" width="200" alt="paratha"/></div>
+        			<div class="boxes"><img src="2016-08-12-185219_1366x768_scrot.png" height="200" width="200" alt="tea"/></div>
+					<div class="boxes"><img src="2016-08-12-185219_1366x768_scrot.png" height="200" width="200" alt="paratha"/></div>
+					<div class="boxes"><img src="2016-08-12-185219_1366x768_scrot.png" height="200" width="200" alt="dosa"/></div>
+					<div class="boxes"><img src="2016-08-12-185219_1366x768_scrot.png" height="200" width="200" alt="chinese"/></div>
+					<div class="boxes"><img src="2016-08-12-185219_1366x768_scrot.png" height="200" width="200" alt="franky"/></div>
+					<div class="boxes"><img src="2016-08-12-185219_1366x768_scrot.png" height="200" width="200" alt="juice"/></div>
+					<div class="boxes"><img src="2016-08-12-185219_1366x768_scrot.png" height="200" width="200" alt="panipuri"/></div>
+
+        		</div>
+        		<div id="footer">
+        			
+        		</div>
+        		</div>
+        	
+        <script>
+        /*when 171 then scaledown and move the 40% to 10% until 350
+																		
+       $(document).ready(function(){
+        		var s2=0;
+        		var s1=0;
+        	$(document).scroll(function(){
+        		var a=$('#h11').offset().top;
+        		var s1=$(window).scrollTop();
+        		
+        		if (Math.abs(s1-s2)<=5) {
+        			$('#dummy').text('scrolldown ' +'s1 :'+s1+' s2 :'+s2);
+        			s2=s1;	
+        		} else{
+        			$('#dummy').text('scrollup ' +'s1 :'+s1+' s2 :'+s2);
+        			s2=s1;	
+        		};
+        		
+        		
+        	});
+        	
+        });*/
+       $(document).ready(function(){
+       	$('#img').on('click',function(){
+       		$('#upperbutton').toggleClass('appear');
+       	});
+       });
+        </script>
+    </body>
+</html>

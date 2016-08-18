@@ -1,0 +1,172 @@
+body{
+	font-size:20px; 
+	margin: 0px 0px 0px 0px;
+	color: white;
+	font-family:iphone;
+}
+/*---font----*/
+@font-face {
+   font-family: icons;
+   src: url("fontawesome-webfont.ttf");
+}
+@font-face {
+   font-family: iphone;
+   src: url("System San Francisco Display Regular.ttf");
+}
+
+/*---header section---*/
+.nosel {
+cursor:default;
+-moz-user-select: none;  
+-webkit-user-select: none;
+}
+#header{
+	padding-top:0px;
+	background-color: #009688;
+	height: 400px;
+	-webkit-box-shadow: 2px 9px 5px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 9px 5px 1px rgba(0,0,0,0.75);
+	box-shadow: 2px 9px 5px 1px rgba(0,0,0,0.75);
+	}
+	
+
+
+
+/*---HEADER : moving div---*/
+#header #fixed{
+	position: fixed;
+	top:0px;
+	width:100%;
+	background-color: #009688;
+	height: 50px;
+	
+}
+#img{
+	
+	padding:10px;
+	
+	margin: 0px;
+	position: fixed;
+	right: 0px;
+	opacity: 0.5;
+	transition: opacity ease-in-out 350ms;
+}
+#img:hover{
+	opacity: 1;
+	
+}
+/*--HEADER : options*/
+#upperbutton li{
+	display: inline-block;
+	list-style-type: none;
+	text-align:center;
+	color:#000000;
+	border-radius:15px;
+	width: 100px;
+    position: relative;
+    right: 30px;
+    top:0px;
+    padding: 10px;
+	border-color:#E0F2F1;
+}
+#upperbutton li:last-child{
+	display: inline-block;
+	list-style-type: none;
+	text-align:center;
+	color:#009688;
+	border-radius:5px;
+	width: 100px;
+    position: relative;
+    right: 30px;
+    top:20px;
+    padding:10px;
+	border-color:#E0F2F1;
+	background-color: white;
+	transition: background-color 250ms ease-in-out;
+}
+#upperbutton li:last-child:hover{
+	background-color: red;
+	color: white;
+}
+.options{
+		display: none;
+		transition: display 350ms ease-in-out;
+
+}
+.appear{
+		display: inline;
+	position: fixed;
+	top: 50px;
+	background-color: #E0F2F1;
+	right: 10px;
+	width: 140px;
+	height: 120px;
+	-webkit-animation-name: anime;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-fill-mode: forward;
+	-webkit-animation-duration: 350ms;
+	-webkit-box-shadow: inset 0px -19px 6px 0px rgba(29,233,182,1);
+-moz-box-shadow: inset 0px -19px 6px 0px rgba(29,233,182,1);
+box-shadow: inset 0px -19px 6px 0px rgba(29,233,182,1);}
+@-webkit-keyframes anime{
+	0%
+	{
+		opacity: 0;
+	}
+	
+	100%
+	{
+		opacity: 1;
+	}
+}
+/*---HEADER : logo*/
+#header #h11{
+	position: absolute;
+	top:150px;
+	right:auto;
+	left:40%;
+	font-size:900%;
+	margin-top:0px;
+	width: 234px;
+	height: 200px;
+	font-family: iphone,icons;
+}
+#h11 h1{
+	
+font-size: 30px;
+	letter-spacing: 4px;
+  position: relative;
+	top: -140px;
+	left: 45px;
+	
+}
+#h11 span{
+
+    -webkit-transform: rotate(-45deg); 
+    transform: rotate(-45deg);
+    display: inline-block;
+   
+    color: black;
+   	letter-spacing: 8px;
+}
+
+
+
+/* -----boxes----*/
+.boxes{
+	
+
+height: 210px;
+width: 210px;
+margin:30px;
+float: left;
+border:solid 1px;
+opacity: 1.0;
+padding: 10px 1px 1px 10px;
+transition: opacity 350ms ease-in-out;
+}
+
+.boxes:hover{
+	opacity: 0.4;
+}
+
